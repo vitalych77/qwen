@@ -105,16 +105,16 @@ $_SESSION['answers'] = $answers;
         </div>
 
         <div class="game-area">
+            <div class="question">
+                <p>Сколько <span class="color-box" id="colorBox"></span> <span id="shapeName"></span> на экране?</p>
+            </div>
+
             <div class="timer-container">
                 <div class="timer" id="timer">5</div>
                 <div class="timer-label">сек</div>
             </div>
 
             <canvas id="gameCanvas"></canvas>
-
-            <div class="question">
-                <p>Сколько <span class="color-box" id="colorBox"></span> <span id="shapeName"></span> на экране?</p>
-            </div>
         </div>
 
         <div class="answers-area" id="answersArea" style="display: none;">
