@@ -15,7 +15,7 @@ function getLevelParams($level) {
         1 => ['width' => 4, 'height' => 5, 'colors' => ['#FF6B6B', '#4ECDC4', '#FFE66D'], 'shapes' => ['circle', 'square']],
         2 => ['width' => 5, 'height' => 5, 'colors' => ['#FF6B6B', '#4ECDC4', '#FFE66D', '#6ab06b'], 'shapes' => ['circle', 'square']],
         3 => ['width' => 5, 'height' => 6, 'colors' => ['#FF6B6B', '#4ECDC4', '#FFE66D', '#6ab06b', '#494a9e'], 'shapes' => ['circle', 'square']],
-        3 => ['width' => 6, 'height' => 6, 'colors' => ['#FF6B6B', '#4ECDC4', '#FFE66D', '#6ab06b', '#494a9e'], 'shapes' => ['circle', 'square']],
+        4 => ['width' => 6, 'height' => 6, 'colors' => ['#FF6B6B', '#4ECDC4', '#FFE66D', '#6ab06b', '#494a9e'], 'shapes' => ['circle', 'square']],
     ];
     
     return $configs[$level] ?? $configs[2];
