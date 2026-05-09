@@ -137,7 +137,7 @@ canvas {
     text-align: center;
     font-size: 1.2em;
     color: #333;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .question p {
@@ -152,8 +152,18 @@ canvas {
     display: inline-block;
     width: 30px;
     height: 30px;
-    border-radius: 5px;
     border: 2px solid #999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Класс для квадратов */
+.color-box.square {
+    border-radius: 5px;
+}
+
+/* Класс для кругов */
+.color-box.circle {
+    border-radius: 50%;
 }
 
 #shapeName {
