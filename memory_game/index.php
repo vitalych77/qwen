@@ -41,7 +41,7 @@ function generateField($width, $height, $colors, $shapes) {
 $correct = $_SESSION['correct_answers'];
 if ($correct > 0 && $correct % 10 == 0) {
     $newLevel = intdiv($correct, 10);
-    if ($newLevel <= 2) {
+    if ($newLevel <= 4) {
         $_SESSION['level'] = $newLevel;
     }
 }
