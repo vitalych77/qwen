@@ -155,7 +155,18 @@ $_SESSION['answers'] = $answers;
         const height = <?php echo $params['height']; ?>;
 
         document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('colorBox').style.backgroundColor = targetColor;
+            const colorBox = document.getElementById('colorBox');
+            
+            // Устанавливаем цвет
+            colorBox.style.backgroundColor = targetColor;
+            
+            // Добавляем класс в зависимости от формы
+            if (targetShape === 'circle') {
+                colorBox.classList.add('circle');
+            } else if (targetShape === 'square') {
+                colorBox.classList.add('square');
+            }
+            
             document.getElementById('shapeName').textContent = shapeNames[targetShape];
             
             drawField();
