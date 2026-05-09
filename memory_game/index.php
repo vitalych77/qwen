@@ -18,7 +18,7 @@ function getLevelParams($level) {
         4 => ['width' => 6, 'height' => 6, 'colors' => ['#FF6B6B', '#4ECDC4', '#FFE66D', '#6ab06b', '#494a9e'], 'shapes' => ['circle', 'square']],
     ];
     
-    return $configs[$level] ?? $configs[2];
+    return $configs[$level] ?? $configs[4];
 }
 
 // Генерация случайного поля
